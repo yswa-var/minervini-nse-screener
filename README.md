@@ -1,6 +1,6 @@
 # NSE-Stock-Dashboard
 
-<h1>iterating through (TOP 30-NIFTY50) downloading 1Y data in '1D candle' into csv.</h1>
+<h3>iterating through (TOP 30-NIFTY50) downloading 1Y data in '1D candle' into csv.</h3>
 
 -calculating:
 
