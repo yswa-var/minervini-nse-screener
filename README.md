@@ -1,7 +1,9 @@
 # NSE-Stock-Dashboard
 
--iterating through (TOP 30-NIFTY50) downloading 1Y data in '1D candle' into csv.
+-<h1>iterating through (TOP 30-NIFTY50) downloading 1Y data in '1D candle' into csv.</h1>
+
 -calculating:
+
 	# Condition 1: Current Price > 150 SMA and > 200 SMA
 	# Condition 2: 150 SMA and > 200 SMA
 	# Condition 3: 200 SMA trending up for at least 1 month
