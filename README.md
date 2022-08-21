@@ -1,6 +1,6 @@
 # NSE-Stock-Dashboard
 
--<h1>iterating through (TOP 30-NIFTY50) downloading 1Y data in '1D candle' into csv.</h1>
+<h1>iterating through (TOP 30-NIFTY50) downloading 1Y data in '1D candle' into csv.</h1>
 
 -calculating:
 
@@ -12,4 +12,4 @@
 	# Condition 6: Current Price is at least 30% above 52 week low
 	# Condition 7: Current Price is within 25% of 52 week high
 
--if all condition match = "selected stocks to invest": exportList
+<p>-if all condition match = "selected stocks to invest": exportList</p>
