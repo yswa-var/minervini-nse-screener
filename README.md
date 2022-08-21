@@ -13,3 +13,4 @@
 	# Condition 7: Current Price is within 25% of 52 week high
 
 <p>-if all condition match = "selected stocks to invest": exportList</p>
+![image](https://user-images.githubusercontent.com/65719349/185805148-6a1de0c1-f105-4af5-8ef1-abbc8f635a01.png)
