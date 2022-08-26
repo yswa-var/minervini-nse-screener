@@ -8,16 +8,18 @@ Created on Fri Aug 19 13:30:53 2022
 
 from pandas_datareader import data as pdr
 from yahoo_fin import stock_info as si
-#from pandas import ExcelWriter
 import yfinance as yf
 import pandas as pd
 import datetime
 import time
 import os
+
+if(os.path.isdir('data')):
+    pass
+else:
+    os.mkdir('data')
+
 yf.pdr_override()
-
-
-
 
 tickers = si.tickers_nifty50()
 tickers.remove('MM.NS')
@@ -35,16 +37,10 @@ index_return = (index_df['Percent Change'] + 1).cumprod()[-1]
 for ticker in tickers:
 
     df = pdr.get_data_yahoo(ticker, start_date, end_date)
-    
-    
-    if(os.path.exists(f'{ticker}.csv') and os.path.isfile(f'{ticker}.csv')):
-        os.remove(f'{ticker}.csv')
-        print(f'PREVIOUS {ticker} file deleted')
-    else:
-        print(f'PREVIOUS {ticker} file not found')
-        
-    
-    df.to_csv(f'{ticker}.csv')
+    if(os.path.isfile(f'data/{ticker}.csv')):
+        os.remove(f'data/{ticker}.csv')
+        print(f'data/{ticker}.csv  is removed')
+    df.to_csv(f'data/{ticker}.csv')
 
     
     df['Percent Change'] = df['Adj Close'].pct_change()
@@ -55,22 +51,19 @@ for ticker in tickers:
     
     print (f'Ticker: {ticker}; Returns Multiple against NIFTY 50: {returns_multiple}\n')
     time.sleep(1)
-
-# Creating dataframe of only top 30%
 rs_df = pd.DataFrame(list(zip(tickers, returns_multiples)), columns=['Ticker', 'Returns_multiple'])
 rs_df['RS_Rating'] = rs_df.Returns_multiple.rank(pct=True) * 100
 rs_df = rs_df[rs_df.RS_Rating >= rs_df.RS_Rating.quantile(.70)]
 
-# Checking Minervini conditions of top 30% of stocks in given list
 rs_stocks = rs_df['Ticker']
 for stock in rs_stocks:    
     try:
-        df = pd.read_csv(f'{stock}.csv', index_col=0)
+        df = pd.read_csv(f'data/{stock}.csv', index_col=0)
         sma = [50, 150, 200]
         for x in sma:
             df["SMA_"+str(x)] = round(df['Adj Close'].rolling(window=x).mean(), 2)
         
-        # Storing required values 
+
         currentClose = df["Adj Close"][-1]
         moving_average_50 = df["SMA_50"][-1]
         moving_average_150 = df["SMA_150"][-1]
@@ -115,6 +108,3 @@ for stock in rs_stocks:
 
 exportList = exportList.sort_values(by='RS_Rating', ascending=False)
 print('\n', exportList)
-#writer = ExcelWriter("ScreenOutput.xlsx")
-#exportList.to_excel(writer, "Sheet1")
-#writer.save()
