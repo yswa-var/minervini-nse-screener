@@ -1,5 +1,5 @@
 # NSE-Stock-Dashboard
-<h1>****website is in progress******</h1>
+<h1>****website under progress******</h1>
 <h3>iterating through (TOP 30-NIFTY50) downloading 1Y data in '1D candle' into csv.</h3>
 
 -calculating:
