@@ -16,3 +16,26 @@
 
 
 ![image](https://user-images.githubusercontent.com/65719349/185805148-6a1de0c1-f105-4af5-8ef1-abbc8f635a01.png)
+
+
+<h2>Ticker List that can be used</h2>
+<p>
+Smallcap  top50 ::::medium volitile::: only good for bull run
+#url = "https://www1.nseindia.com/content/indices/ind_niftysmallcap50list.csv"
+
+multicap500: large cap - 50%, midcap - 25%, smallcap - 25% ::::diversified::: 
+#url = "https://www1.nseindia.com/content/indices/ind_nifty500Multicap502525_list.csv"
+
+Smallcap 250 #::::very high volatility::: riskey!
+#url = "https://www1.nseindia.com/content/indices/ind_niftysmallcap250list.csv"
+
+microcap 250 #:::::v.v.v high volatility:::: can be worthless
+#url = "https://www1.nseindia.com/content/indices/ind_niftymicrocap250_list.csv"
+
+nifty top 100 ::::low risk::: average returns::::Recomended
+url = "https://archives.nseindia.com/content/indices/ind_nifty100list.csv"
+</p>
+
+
+<h3>!!important</h3>
+make sure that there is a folder named "data" in the same directory to store stocks csv data.
