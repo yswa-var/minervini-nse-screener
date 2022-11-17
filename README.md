@@ -39,3 +39,6 @@ url = "https://archives.nseindia.com/content/indices/ind_nifty100list.csv"
 
 <h3>!!important</h3>
 make sure that there is a folder named "data" in the same directory to store stocks csv data.
+
+<h3>now to back test the stocks</h3>
+head here: https://github.com/bbmusa/ibkr-backtest-india-nse
