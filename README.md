@@ -20,19 +20,19 @@
 
 <h2>Ticker List that can be used</h2>
 <ul>
-<li>Smallcap  top50 ::::medium volitile::: only good for bull run
+<li>Smallcap50
 #url = "https://www1.nseindia.com/content/indices/ind_niftysmallcap50list.csv"</li>
 
-<li>multicap500: large cap - 50%, midcap - 25%, smallcap - 25% ::::diversified::: 
+<li>multicap500: large cap - 50%, midcap - 25%, smallcap - 25% 
 #url = "https://www1.nseindia.com/content/indices/ind_nifty500Multicap502525_list.csv"</li>
 
-<li>Smallcap 250 #::::very high volatility::: riskey!
+<li>Smallcap 250 
 #url = "https://www1.nseindia.com/content/indices/ind_niftysmallcap250list.csv"</li>
 
-<li>microcap 250 #:::::v.v.v high volatility:::: can be worthless
+<li>microcap 250 
 #url = "https://www1.nseindia.com/content/indices/ind_niftymicrocap250_list.csv"</li>
 
-<li>nifty top 100 ::::low risk::: average returns::::Recomended
+<li>nifty100 
 url = "https://archives.nseindia.com/content/indices/ind_nifty100list.csv"</li>
 </ul>
 
