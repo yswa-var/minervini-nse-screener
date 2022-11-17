@@ -20,20 +20,20 @@
 
 <h2>Ticker List that can be used</h2>
 <p>
-Smallcap  top50 ::::medium volitile::: only good for bull run
-#url = "https://www1.nseindia.com/content/indices/ind_niftysmallcap50list.csv"
+	Smallcap  top50 ::::medium volitile::: only good for bull run
+	#url = "https://www1.nseindia.com/content/indices/ind_niftysmallcap50list.csv"
 
-multicap500: large cap - 50%, midcap - 25%, smallcap - 25% ::::diversified::: 
-#url = "https://www1.nseindia.com/content/indices/ind_nifty500Multicap502525_list.csv"
+	multicap500: large cap - 50%, midcap - 25%, smallcap - 25% ::::diversified::: 
+	#url = "https://www1.nseindia.com/content/indices/ind_nifty500Multicap502525_list.csv"
 
-Smallcap 250 #::::very high volatility::: riskey!
-#url = "https://www1.nseindia.com/content/indices/ind_niftysmallcap250list.csv"
+	Smallcap 250 #::::very high volatility::: riskey!
+	#url = "https://www1.nseindia.com/content/indices/ind_niftysmallcap250list.csv"
 
-microcap 250 #:::::v.v.v high volatility:::: can be worthless
-#url = "https://www1.nseindia.com/content/indices/ind_niftymicrocap250_list.csv"
+	microcap 250 #:::::v.v.v high volatility:::: can be worthless
+	#url = "https://www1.nseindia.com/content/indices/ind_niftymicrocap250_list.csv"
 
-nifty top 100 ::::low risk::: average returns::::Recomended
-url = "https://archives.nseindia.com/content/indices/ind_nifty100list.csv"
+	nifty top 100 ::::low risk::: average returns::::Recomended
+	url = "https://archives.nseindia.com/content/indices/ind_nifty100list.csv"
 </p>
 
 
